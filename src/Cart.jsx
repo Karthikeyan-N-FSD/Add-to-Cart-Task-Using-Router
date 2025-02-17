@@ -2,9 +2,7 @@ import { PlusIcon } from '@heroicons/react/24/outline'
 import { MinusIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router'
 
-
 export function Cart(props) {
-
 
     return (
         <div className=" flex gap-4">
@@ -58,7 +56,6 @@ export function Cart(props) {
                 <hr class="border-t border-dotted border-gray-600 border-2 mb-2" />
                 <button className='w-full mb-4 bg-green-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-green-600'>Place Order</button>
             </div>
-
         </div>
     )
 }

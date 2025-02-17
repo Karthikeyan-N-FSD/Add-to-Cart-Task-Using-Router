@@ -8,13 +8,11 @@ import { ProductFull } from './ProductFull';
 import './App.css';
 
 
-
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
   const [modalState, setModalState] = useState(false);
-
 
   let fetchProducts = async () => {
     const productsData = await fetch('https://fakestoreapi.com/products')
@@ -55,7 +53,6 @@ function App() {
     }
   };
   
-  
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -73,10 +70,7 @@ function App() {
             <Route path="product/:id" element={<ProductFull products={products} addToCart={addToCart}/>} />
           </Routes>
         </div>
-
-      
-
-
+ 
       {modalState && (<CartModal cart={cart} total={total} setModalState={setModalState} removeCart={removeCart} increaseQuantity={increaseQuantity} decreaseQuantity={decreaseQuantity} />)}
       </BrowserRouter>
     </div >

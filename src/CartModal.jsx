@@ -5,7 +5,6 @@ import { Link } from 'react-router';
 export function CartModal(props) {
     const modalRef = useRef(null);
 
-
     useEffect(() => {
         function handleClickOutside(event) {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -19,7 +18,6 @@ export function CartModal(props) {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, [props]);
-
 
     return (
 
