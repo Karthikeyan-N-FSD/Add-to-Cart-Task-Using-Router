@@ -21,7 +21,7 @@ export function CartModal(props) {
 
     return (
 
-        <div ref={modalRef} className="bg-white px-4 py-2 border-4 shadow-md border-gray-300 shadow-gray-500 rounded-lg w-100 h-fit max-h-[80vh] overflow-y-auto fixed top-12 right-17">
+        <div ref={modalRef} className="bg-white px-4 py-2 border-4 shadow-md border-gray-300 shadow-gray-500 rounded-lg w-100 h-fit max-h-[80vh] overflow-y-auto fixed top-12 right-[2%] sm:right-7">
             <button onClick={() => props.setModalState(false)} className='absolute top-1 right-1 cursor-pointer text-gray-600 hover:text-gray-900'>
                 <XMarkIcon className='w-7 h-7' />
             </button>
@@ -56,6 +56,7 @@ export function CartModal(props) {
                         <span>₹ {props.total}</span>
                     </div>
                     <Link to="cart"><button onClick={() => props.setModalState(false)} className='w-full mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600'>Checkout</button></Link>
+                    <p>(Note: Click Checkout button to route to full cart)</p>
                 </>
             )}
         </div>
