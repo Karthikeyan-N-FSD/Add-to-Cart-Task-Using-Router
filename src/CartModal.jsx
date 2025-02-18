@@ -21,7 +21,7 @@ export function CartModal(props) {
 
     return (
 
-        <div ref={modalRef} className="bg-white px-4 py-2 border-4 shadow-md border-gray-300 shadow-gray-500 rounded-lg w-100 h-fit max-h-[80vh] overflow-y-auto fixed top-12 right-[2%] sm:right-7">
+        <div ref={modalRef} className="bg-white px-4 py-2 border-4 shadow-md border-gray-300 shadow-gray-500 rounded-lg w-100 h-fit max-h-[80vh] overflow-y-auto fixed top-15    right-[2%] sm:right-7">
             <button onClick={() => props.setModalState(false)} className='absolute top-1 right-1 cursor-pointer text-gray-600 hover:text-gray-900'>
                 <XMarkIcon className='w-7 h-7' />
             </button>
