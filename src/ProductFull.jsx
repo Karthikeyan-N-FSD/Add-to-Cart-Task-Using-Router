@@ -7,8 +7,8 @@ export function ProductFull(props) {
     const { id } = useParams();
     const product = props.products.find((product) => product.id === parseInt(id));
     return (
-        <div className='flex gap-4 m-3'>
-            <img className='w-xs' src={product.image} alt={product.title} />
+        <div className='flex flex-col md:flex-row gap-4 m-3'>
+            <img className='w-full md:w-xs' src={product.image} alt={product.title} />
             <div>
                 <a href='#' className='text-xl'>{product.category}</a>
                 <h1 className='font-bold text-3xl pb-3'>{product.title}</h1>

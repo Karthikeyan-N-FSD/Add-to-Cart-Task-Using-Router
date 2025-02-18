@@ -5,8 +5,8 @@ import { Link } from 'react-router'
 export function Cart(props) {
 
     return (
-        <div className=" flex gap-4">
-            <div className="bg-white px-4 py-2 rounded-lg shadow-gray-400 shadow-md lg:w-7/10">
+        <div className=" flex flex-col md:flex-row gap-2">
+            <div className="bg-white px-4 py-2 rounded-lg shadow-gray-400 shadow-md w-full md:w-35/50">
 
                 <h2 className='text-2xl font-bold mb-4'><u>Shopping Cart ({props.cart.length})</u></h2>
                 {props.cart.length === 0 ? (
@@ -39,7 +39,7 @@ export function Cart(props) {
                 )}
              <Link to='/'><p className='text-center font-bold text-lg my-4'>Continue Shopping</p></Link>
             </div>
-            <div className="bg-white flex flex-col gap-2 px-4 py-2 rounded-b-xs fixed shadow-gray-400 shadow-md top-16 right-0 h-fit lg:w-3/10">
+            <div className="bg-white flex flex-col gap-2 px-4 py-2 rounded-b-xs md:fixed shadow-gray-400 shadow-md top-16 right-4 h-fit md:w-14/50">
                 <h1 className="text-gray-500 py-2 font-bold">PRICE DETAILS</h1>
                 <hr className="border-gray-300 !px-0" />
                 <div className="flex justify-between">
