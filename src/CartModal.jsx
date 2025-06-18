@@ -56,7 +56,6 @@ export function CartModal(props) {
                         <span>₹ {props.total}</span>
                     </div>
                     <Link to="cart"><button onClick={() => props.setModalState(false)} className='w-full mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600'>Checkout</button></Link>
-                    <p>(Note: Click Checkout button to route to full cart)</p>
                 </>
             )}
         </div>
