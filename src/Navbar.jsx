@@ -10,10 +10,15 @@ export function Navbar(props) {
                 <p className="font-semibold text-xl">KAZ Store</p>
             </Link>
             <p className='italic'>(Product card route to full page via params)</p>
-            <Link to="cart" className='relative'>
+            <button
+                type="button"
+                className="relative"
+                onClick={() => props.setModalState(true)}
+                aria-label="Open cart modal"
+            >
                 <ShoppingCartIcon className="w-11 h-11" />
                 <span className='absolute top-1.75 right-3.25 text-[#52FFFF] font-bold text-sm'>{props.cart.length}</span>
-            </Link>
+            </button>
         </nav>
     )
-} 
+}
