@@ -9,7 +9,6 @@ export function Navbar(props) {
                 <img className="w-10 rounded-full" src="/logo.webp"></img>
                 <p className="font-semibold text-xl">KAZ Store</p>
             </Link>
-            <p className='italic'>(Product card route to full page via params)</p>
             <button
                 type="button"
                 className="relative"
